@@ -1,0 +1,35 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #DBC8DA;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 700px) {
+    .card-container{
+      width: 30vw;
+      padding: 15px;
+      p{
+        font-size: small;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .card-container{
+      p{
+        font-size: 10px;
+      }
+    }
+  }
